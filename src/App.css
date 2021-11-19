@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+:root {
+  --theme-color: #122f4e;
+  --secondary-color: #e87c1e;
+  --third-color: #ff2721;
+  --primary-font-color: rgb(29, 29, 29);
+  --primary-theme: rgb(241, 196, 15, 0.8);
+  --primary-theme-second: rgb(46, 134, 222, 0.8);
+  --secondary-black: #2c3e50;
+  --font-color: black;
+}
+
+::selection {
+  background: var(--theme-color);
+  color: black;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+
+  font-family: Poppins;
+  overflow-x: hidden;
+  transition: 0.3s ease-in-out;
+  background-color: #020202;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin: 0 auto;
+  font-size: 2rem;
+  background-color: #ccc;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 12px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.container:hover {
+  background-color: #aaa;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header .logo {
+  margin-left: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Neutral face";
+  text-transform: uppercase;
+  color: #122f4e;
+  letter-spacing: 5px;
+}
+
+.header ul {
+  list-style: none;
+  text-align: right;
+  margin-right: 30px;
+  display: flex;
+}
+.header ul li .link {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* home */
+.conatainer-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.container-home h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 15px;
+  word-spacing: 10px;
+}
+.home-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.home-overlay {
+  background: url("lishu.jpeg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* about */
+.conatainer-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.container-about h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.about-overlay {
+  background: url("about.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* contact */
+.conatainer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.container-contact h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.contact-overlay {
+  background: url("contact.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* transition */
+.transition-effect {
+  position: absolute;
+  z-index: 1000;
+  background-color: #122f4e;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
