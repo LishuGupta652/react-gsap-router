@@ -1,6 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, Suspense ,lazy } from "react";
 import Transition from "./Transition";
 import gsap from "gsap";
+import PageProgress from "react-page-progress";
+
+const Works = lazy(() => import("./Works"));
+const Footer = lazy(() => import("./Footer"));
 
 const Home = () => {
   const home = gsap.timeline();
@@ -35,6 +39,15 @@ const Home = () => {
       <div className="container-home">
         <h1 ref={homeh1}>full stack web and android developer</h1>
       </div>
+       <Suspense fallback={<div className="loading-suspense">LOADING</div>}>
+        <PageProgress color={"skyblue"} height={5} />
+      </Suspense>
+          <Suspense fallback={<div />}>
+        <Works />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };

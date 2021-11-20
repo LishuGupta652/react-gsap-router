@@ -5,6 +5,11 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import notfound from "./pages/notfound"
 
+// CSS IMPORTS
+import "./css/app.css";
+import "./css/ui.css";
+import "./css/about.css";
+
 function App() {
   return (
     <div className="App">
