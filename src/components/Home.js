@@ -34,10 +34,12 @@ const Home = () => {
   });
   return (
     <div>
-      <Transition timeline={home} />
-      <div className="home-image home-overlay" ref={homeimg}></div>
-      <div className="container-home">
-        <h1 ref={homeh1}>full stack web and android developer</h1>
+      <div className="banner">
+        <Transition timeline={home} />
+        <div className="home-image home-overlay" ref={homeimg}></div>
+        <div className="container-home">
+          <h1 ref={homeh1}>full stack web and android developer</h1>
+        </div>
       </div>
        <Suspense fallback={<div className="loading-suspense">LOADING</div>}>
         <PageProgress color={"skyblue"} height={5} />
