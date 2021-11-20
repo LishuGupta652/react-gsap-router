@@ -1,29 +1,28 @@
-# react boiler plate
+@portfolio
 
-## A branch proof app [take care of the branches]
+## Version 2.0 upcomming
 
-- main
-- first > here to begin with
+# BRANCH UPDATE
 
-## hooks
+![Image](https://www.pakkabaniya.ml/favicon.ico "lishugupta")
 
-1 useState
-2 useEffect
-3 useContext
-4 useReducer
-5 useRef
+### Completed Updates
 
-https://github.com/LishuGupta652/react
+- [x] Remove unused library
+- [x] Update favicon
+- [x] Remove flag
+- [x] Update Footer Texts
+- [x] Change scroll bar width
+- [x] Remove Skills Component
+- [x] Remove Header
+- [x] Add new header
+- [x] Update Header text
+- [x] Reduced image size by imgbot
+- [x] Merge imgbot to master
+- [x] User Sass instead of Css (npm instal node-sass)
+- [x] Used Framer-motion
+- [x] Changed font to Montserrat Alternative
 
-https://react.lishu.ml/
+## Upcomming Updated
 
-```
-git add . && git commit -m "terminal" && git push origin main
-```
-
-[web](https://react.lishu.ml/)
-[repo](https://github.com/LishuGupta652/react)
-
-## author
-
-lishugupta652
+- [ ] Adding Router Gsap.
