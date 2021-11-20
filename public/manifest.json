@@ -1,6 +1,6 @@
 {
   "short_name": "Lishu gupta",
-  "name": "Learning App by lishu gupta",
+  "name": "PORTFOLIO",
   "icons": [
     {
       "src": "lishu.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#7fb0a6",
+  "background_color": "#f1f1f1"
 }
